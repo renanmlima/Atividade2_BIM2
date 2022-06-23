@@ -1,6 +1,6 @@
 # Mês em Extenso a Partir de uma Data Inserida
 
-### Criado por Renan Lima | Centro Universitário UNIFAAT - Atibaia - 16.06.2022
+### Criado por Renan Lima | Centro Universitário UNIFAAT - Atibaia | 16.06.2022
 
 
 - Objetivo:
