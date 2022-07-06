@@ -30,7 +30,11 @@ namespace MesExtenso
             
             var data_atual = Convert.ToDateTime(Console.ReadLine());
 
-            mesConverte(data_atual);
+            int dia = data_atual.Day;
+            int ano = data_atual.Year;
+
+
+            Console.WriteLine(dia +" de " +mesConverte(data_atual) +" de " +ano);
 
             Console.ReadKey();
         }
