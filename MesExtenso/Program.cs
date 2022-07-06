@@ -10,6 +10,15 @@ namespace MesExtenso
     {
         public static string mesConverte(DateTime atual)
         {
+            
+            /* |====================================================| */
+            /* |* AUTOR: RENAN LIMA | RA: 6321300 ******************| */
+            /* |* DATA DE CRIAÇÃO: 16.JUN.2022 *********************| */
+            /* |* PROVA FECHAMENTO DE NOTA DO 2 BIMESTRE ***********| */
+            /* |* MATÉRIA: LÓGICA DE PROGRAMAÇÃO *******************| */
+            /* |* SEMESTRE: 1 | INSTITUIÇÃO: UNIFAAT ATIBAIA *******| */
+            /* |* CURSO: ANÁLISE E DESENVOLVIMENTO DE SISTEMAS *****| */
+            /* |====================================================| */
 
             //variavel que irá armazenar o número do mês, utilizando a função .Month
             int mes = atual.Month;
