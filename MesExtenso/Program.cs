@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,16 +27,54 @@ namespace MesExtenso
         {
             Console.Write("Por favor, insira um data no formato DD/MM/AAAA. Nós te apresentaremos o mês escrito em extenso: ");
             //variavel responsavel por armazenar a data atual inserida pelo usuário
-            
-            var data_atual = Convert.ToDateTime(Console.ReadLine());
+
+            string cidade = "";
+            var data_atual = Convert.ToDateTime(Console.ReadLine());int cont;
+
+            Console.WriteLine();
 
             int dia = data_atual.Day;
             int ano = data_atual.Year;
 
+            Console.Write("Olá, selecione uma das seguintes cidades:\n\n1 - Atibaia\n2 - Bragança Paulista\n3 - Mairiporã" +
+                "\n4 - Nazaré\n5 - Terra Preta\n6 - Extrema\n7 - Vargem \n->");
 
-            Console.WriteLine(dia +" de " +mesConverte(data_atual) +" de " +ano);
+            cont = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine();
+
+            switch (cont)
+            {
+                case 1:
+                    cidade = "Atibaia";
+                    break;
+
+                case 2:
+                    cidade = "Bragança Paulista";
+                    break;
+
+                case 3:
+                    cidade = "Mairiporã";
+                    break;
+
+                case 4:
+                    cidade = "Nazaré";
+                    break;
+
+                case 5:
+                    cidade = "Terra Preta";
+                    break;
+
+                case 6:
+                    cidade = "Extrema";
+                    break;
+
+                case 7:
+                    cidade = "Vargem";
+                    break;
+
+            }
+
+            Console.WriteLine(cidade+", " +dia +" de " +mesConverte(data_atual) +" de " +ano);
 
             Console.ReadKey();
-        }
-    }
-}
